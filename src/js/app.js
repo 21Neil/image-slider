@@ -12,7 +12,7 @@ const app = () => {
   }
 
   const backBtnOnClick = () => {
-    slidesController.prev()
+    slidesController.previous()
     timer.reset(slidesController.next, 5000)
   }
 
