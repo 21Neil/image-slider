@@ -1,0 +1,94 @@
+:root {
+  font-size: 20px;
+}
+
+body {
+  background: #303030;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.frame {
+  position: relative;
+  width: 750px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 1rem;
+  z-index: 0;
+}
+
+.slides-container {
+  position: absolute;
+  display: flex;
+  left: 0;
+  transition: left 1s;
+  z-index: -1;
+}
+
+.slide-1 {
+  left: -750px;
+}
+
+.img {
+  width: 750px;
+  height: 500px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.nav-btn {
+  position: absolute;
+  color: #ffffff91;
+  font-size: 3rem;
+  z-index: 1;
+  height: 100%;
+  background: none;
+  border: none;
+  padding: 1rem;
+}
+
+.nav-btn:hover {
+  cursor: pointer;
+  background: #00000037;
+}
+
+.forward {
+  right: 0;
+}
+
+.back {
+  left: 0;
+}
+
+.dots-container {
+  position: absolute;
+  bottom: 0.4rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.dot {
+  display: block;
+  background: rgba(231, 231, 231, 0.606);
+  border: none;
+  border-radius: 0.3rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  transition: background-color 1s ;
+}
+
+.dot:hover {
+  cursor: pointer;
+}
+
+.dot.current {
+  background: rgb(255, 255, 255);
+}

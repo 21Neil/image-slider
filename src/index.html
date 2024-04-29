@@ -3,9 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ESLint-Webpack</title>
+    <title>Image carousel</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
-    <h1>ESLint-Webpack</h1>
+    <main>
+      <div class="frame">
+        <button class="nav-btn back">
+          <span class="material-symbols-outlined"> arrow_back_ios_new </span>
+        </button>
+        <div class="slides-container">
+          <img src="asset/bath-plug.jpg" alt="bath plug" />
+          <img src="asset/look-down.jpg" alt="look down" />
+          <img src="asset/mold-remediation.jpg" alt="mold remediation" />
+          <img src="asset/sun-shining-into-tunnel.jpg" alt="sun shining into tunnel" />
+          <img src="asset/water-pistol.jpg" alt="water pistol" />
+        </div>
+        <button class="nav-btn forward">
+          <span class="material-symbols-outlined"> arrow_forward_ios </span>
+        </button>
+        <div class="dots-container">
+          <button class="dot current"></button><button class="dot"></button><button class="dot"></button
+          ><button class="dot"></button><button class="dot"></button>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
